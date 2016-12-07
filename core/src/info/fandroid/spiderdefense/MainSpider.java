@@ -31,7 +31,7 @@ public class MainSpider {
         spideragi = sp.getInteger("agi");
         level = sp.getInteger("level");
         exp = sp.getInteger("exp");
-        sp.putInteger("health", 20);
+        sp.putInteger("health", 50);
         sp.flush();
     }
 

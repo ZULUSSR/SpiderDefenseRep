@@ -23,6 +23,7 @@ public class Inventory extends StateOfTheGame{
     Texture poisonousthornimg = new Texture("poisonousthorn.png");
     Texture ioimg = new Texture("indefiniteobject.png");
     Texture poisonframeimg = new Texture("poisonframe.png");
+    Texture poisonousthornframeimg = new Texture("poisonousthornframe.png");
     Texture selectimg = new Texture("select.png");
     Texture notlearnedimg = new Texture("io.png");
     Texture backimg = new Texture("back.png");
@@ -63,7 +64,7 @@ public class Inventory extends StateOfTheGame{
                 if ((Gdx.input.getX() > Gdx.graphics.getWidth()/2) && (Gdx.input.getY() > Gdx.graphics.getHeight()/3) && (Gdx.input.getY() < Gdx.graphics.getHeight()/2 + Gdx.graphics.getHeight()/6)){
                     texskills.insert(max, poisonousthornimg);
                     skillsd.insert(max, 10);
-                    ammunition.insert(max, 25);
+                    ammunition.insert(max, 20);
                     coun_ammunition++;
                     gsm.state(curlist).texskills = texskills;
                     gsm.state(curlist).skillsd = skillsd;
@@ -94,7 +95,7 @@ public class Inventory extends StateOfTheGame{
             sb.draw(notlearnedimg, 200, 400, 200, 200);
         }
         if(sp.getBoolean("poisonousthorn")){
-            sb.draw(poisonframeimg, 0, 200, 200, 200);
+            sb.draw(poisonousthornframeimg, 0, 200, 200, 200);
             sb.draw(selectimg, 200, 200, 200, 200);
             sb.draw(poisonousthornimg, 50, 250, 100, 100);
         }else{

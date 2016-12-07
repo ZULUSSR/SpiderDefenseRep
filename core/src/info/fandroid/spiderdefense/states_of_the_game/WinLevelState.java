@@ -21,6 +21,7 @@ public class WinLevelState extends StateOfTheGame {
     public WinLevelState(GameStateManager gsm) {
         super(gsm);
         sp.putBoolean("poisonousthorn", true);
+        sp.flush();
         winimg = new Texture("win.png");
         ptfimg = new Texture("poisonousthornframe.png");
         ptimg = new Texture("poisonousthorn.png");

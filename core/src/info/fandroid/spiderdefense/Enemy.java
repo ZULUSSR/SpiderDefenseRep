@@ -19,7 +19,7 @@ public class Enemy {
 
     public void create(Texture enemyimg, int damage){
         ourenemy = new Sprite(enemyimg);
-        healthpoint = 10;
+        healthpoint = 5;
         enemydamage = damage;
     }
 

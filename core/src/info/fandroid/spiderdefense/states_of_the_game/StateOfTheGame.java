@@ -30,7 +30,7 @@ public abstract class StateOfTheGame {
     public Array<Integer> superammunition = new Array<Integer>();
     public Array<SuperSkill> ss = new Array<SuperSkill>();
     public MainSpider spider;
-    public BitmapFont font = new BitmapFont();
+    public BitmapFont font;
     public int speed;
     public int progress;
     public int coun_ammunition_ss;
@@ -41,6 +41,8 @@ public abstract class StateOfTheGame {
         camera = new OrthographicCamera();
         camera.setToOrtho(false, 400, 600);
         mouse = new Vector3();
+        font = new BitmapFont();
+        font.setColor(255,128,0,1);
     }
 
     protected abstract void handleinput();
